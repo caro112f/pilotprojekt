@@ -59,6 +59,7 @@ header #two {
 
 #first {
   display: grid;
+  place-content: center;
   margin: 0;
   background-image: url(pictures/IMG_4636.webp);
   object-fit: cover;
@@ -67,7 +68,12 @@ header #two {
   background-size: cover;
   background-position: 25% 10%;
 }
-
+#first h2 {
+  font-family: "Exo", sans-serif;
+  color: white;
+  font-size: 26px;
+  text-shadow: 2px 2px 2px black;
+}
 #second {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1000px) 1fr;
@@ -119,6 +125,13 @@ h2 {
 }
 
 @media (min-width: 1000px) {
+  header #one,
+  header #two {
+    font-size: 80px;
+  }
+  #first h2 {
+    font-size: 50px;
+  }
   #billede_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
